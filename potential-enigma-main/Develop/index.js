@@ -42,14 +42,13 @@ const questions = [{
 {
     typr: 'input',
     name: 'test',
-    message: "List any test written and examples",
+    message: "Any test written and examples",
 },
 {
     typr: 'list',
     name: 'license',
     message: "Choose any licenses that your project may include",
     choice: [
-        'Apache License 2.0',
         'BSD 3',
         'BSD 2',
         'GPL',
@@ -67,7 +66,7 @@ function writeToFile(fileName, data) {
     var fileName = 'README.md'
     fs.writeFile(fileName, data, "utf-8", function(err) {
         if (err) throw err;
-        console.log('Success!');
+        console.log('Your README file had successfully created!');
     })
 }
 
